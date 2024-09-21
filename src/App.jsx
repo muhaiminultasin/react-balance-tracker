@@ -3,7 +3,6 @@ import { useState } from "react";
 import "./App.css";
 
 import Balance from "./components/Balance";
-import Header from "./components/header"
 import IncomeExpenses from "./components/IncomeExpenses";
 import AddTransaction from "./components/AddTransaction";
 import TransactionList from "./components/transactionList";
@@ -31,7 +30,6 @@ function App() {
   
   return (
     <>
-    <Header/>
     <Balance balance={calculateBalance()}/>
     <IncomeExpenses income={calculateIncome()} expense={calculateExpense()}/>
     <AddTransaction addTransaction={addTransaction}/>
