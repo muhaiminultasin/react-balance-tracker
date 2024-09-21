@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import "./App.css";
 
-import Header from "./components/header";
 import Balance from "./components/Balance";
+import Header from "./components/header"
 import IncomeExpenses from "./components/IncomeExpenses";
 import AddTransaction from "./components/AddTransaction";
 import TransactionList from "./components/transactionList";
