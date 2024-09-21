@@ -2,10 +2,11 @@ import { useState } from "react";
 
 import "./App.css";
 
+import Header from "./components/Header";
 import Balance from "./components/Balance";
 import IncomeExpenses from "./components/IncomeExpenses";
 import AddTransaction from "./components/AddTransaction";
-import TransactionList from "./components/transactionList";
+import TransactionList from "./components/TransactionList";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
   
   return (
     <>
+    <Header />
     <Balance balance={calculateBalance()}/>
     <IncomeExpenses income={calculateIncome()} expense={calculateExpense()}/>
     <AddTransaction addTransaction={addTransaction}/>
